@@ -76,17 +76,43 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.container {
+/* .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+} */
+/* MOBILE_CONTAINER */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
 }
 
 /* ===========================================HEADER============================== */
 
-.page-header {
+/* .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
@@ -108,6 +134,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 
 .contacts {
   display: flex;
@@ -148,7 +175,7 @@ body {
 .site-nav-item:hover::after,
 .site-nav-item:focus::after {
   opacity: 1;
-}
+} */
 
 /* Logotype */
 
@@ -183,7 +210,7 @@ body {
   color: var(--studio-logo-color);
 }
 /* Navigation */
-.site-nav a {
+/* .site-nav a {
   color: var(--title-color);
   text-decoration: none;
   font-weight: 500;
@@ -202,9 +229,8 @@ body {
 
 .site-nav a:active {
   color: var(--active-color);
-  /* text-decoration: underline; */
-}
-
+} */
+/* 
 .contacts a {
   color: var(--main-color);
   font-style: normal;
@@ -220,6 +246,36 @@ body {
 
 .contacts a:focus {
   color: var(--active-color);
+} */
+.mobile-menu-open {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+}
+.mobile-menu-open-icon {
+  fill: #2e2f42;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+
+  .contacts-item {
+    display: none;
+  }
+}
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ======================================= /HEADER================================ */
