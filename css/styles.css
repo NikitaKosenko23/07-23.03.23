@@ -455,7 +455,7 @@ body {
 .hero-title {
   color: var(--hero-title-color);
   font-weight: 700;
-  width: 320px;
+  max-width: 320px;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -501,6 +501,7 @@ body {
     background-size: auto auto;
   }
   .hero-title {
+    max-width: none;
     width: 496px;
     font-size: 56px;
     margin-bottom: 48px;
