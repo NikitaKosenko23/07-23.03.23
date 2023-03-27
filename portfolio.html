@@ -46,8 +46,77 @@
             </li>
           </ul>
         </address>
+
+        <!-- button menu open mobile -->
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-humburger-mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mobile menu and clode button -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-items list">
+            <li class="mobile-menu-item">
+              <a href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-num">
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-menu-mail">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-social list">
+            <li class="mobile-menu-social-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <!-- main part of the page -->
     <main>
       <!-- Filters -->
@@ -83,7 +152,7 @@
                   <img
                     src="./images/img8.jpg"
                     alt="Phone screenshots"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -105,7 +174,7 @@
                   <img
                     src="./images/img9.jpg"
                     alt="Phone screen paying NFC"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -127,7 +196,7 @@
                   <img
                     src="./images/img10.jpg"
                     alt="laptop and mobilephone screens"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -146,7 +215,7 @@
             <li class="portfolio-card">
               <a class="portfolio-card-link" href=""
                 ><div class="portfolio-card-wrapper">
-                  <img src="./images/img11.jpg" alt="car wheel" width="360" />
+                  <img src="./images/img11.jpg" alt="car wheel" width="396" />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -167,7 +236,7 @@
                   <img
                     src="./images/img12.jpg"
                     alt="phone screenshots and screen"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -189,7 +258,7 @@
                   <img
                     src="./images/img13.jpg"
                     alt="girl with phone in orange cardigan"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -211,7 +280,7 @@
                   <img
                     src="./images/img14.jpg"
                     alt="layouts of instagramm Stories"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -233,7 +302,7 @@
                   <img
                     src="./images/img15.jpg"
                     alt="woman with white bag"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -255,7 +324,7 @@
                   <img
                     src="./images/img16.jpg"
                     alt="a cup of Coffee in progress"
-                    width="360"
+                    width="396"
                   />
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -275,76 +344,82 @@
         </div>
       </section>
     </main>
+
     <footer class="page-footer">
       <div class="container container-footer">
-        <div class="footer-part-one">
-          <a class="logo-footer" href="./index.html"
-            >Web<span class="footer-logo">Studio</span></a
-          >
-          <p class="page-footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-part-two">
-          <p class="footer-title">Social media</p>
-          <ul class="social-list-footer list">
-            <li class="social-list-item-footer">
-              <a href="" class="social-list-link-footer">
-                <svg
-                  aria-label="instagram"
-                  class="social-list-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item-footer">
-              <a href="" class="social-list-link-footer">
-                <svg
-                  aria-label="twitter"
-                  class="social-list-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item-footer">
-              <a href="" class="social-list-link-footer">
-                <svg
-                  aria-label="facebook"
-                  class="social-list-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list-item-footer">
-              <a href="" class="social-list-link-footer">
-                <svg
-                  aria-label="linkedin"
-                  class="social-list-icon"
-                  width="16"
-                  height="16"
-                >
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <!-- <div class="tablet-footer-one"> -->
+        <div class="footer-part-one-two">
+          <div class="footer-part footer-part-one">
+            <a class="logo-footer" href="./index.html"
+              >Web<span class="footer-logo">Studio</span></a
+            >
+            <p class="page-footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-part footer-part-two">
+            <p class="footer-title">Social media</p>
+            <ul class="social-list-footer list">
+              <li class="social-list-item-footer">
+                <a href="" class="social-list-link-footer">
+                  <svg
+                    aria-label="instagram"
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item-footer">
+                <a href="" class="social-list-link-footer">
+                  <svg
+                    aria-label="twitter"
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item-footer">
+                <a href="" class="social-list-link-footer">
+                  <svg
+                    aria-label="facebook"
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item-footer">
+                <a href="" class="social-list-link-footer">
+                  <svg
+                    aria-label="linkedin"
+                    class="social-list-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- ============FOOTER SUBSCR=========== -->
-        <div class="footer-part-three">
-          <p class="footer-title">Subscribe</p>
 
-          <form class="subscribe-footer-form">
+        <p class="footer-title footer-subscribe-p">Subscribe</p>
+
+        <form class="subscribe-footer-form">
+          <div class="input-div">
+            <p class="footer-title footer-subscribe-second">Subscribe</p>
             <input
               class="subscribe-form-input"
               id="subscribe-mail"
@@ -356,17 +431,18 @@
               title="yourmail@mail.com"
               autocomplete="on"
             />
+          </div>
 
-            <button type="submit" class="subscribe-button">
-              Subscribe
-              <svg class="subscribe-icon" height="24" width="24">
-                <use href="./images/icons.svg#icon-subscribe-icon"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+          <button type="submit" class="subscribe-button">
+            Subscribe
+            <svg class="subscribe-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-subscribe-icon"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
