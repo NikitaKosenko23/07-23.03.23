@@ -721,6 +721,7 @@ body {
 .customer-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 16px;
   row-gap: 72px;
 }
@@ -925,78 +926,6 @@ body {
   fill: #f4f4fd;
 }
 
-/* .page-footer {
-  background-color: var(--footer-backgroundcolor);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
-}
-.footer-part-one {
-  margin-right: 120px;
-}
-.footer-part-two {
-  margin-right: 80px;
-}
-
-/* Increase the flow of customers and sales for your business with digital marketing & growth solutions. */
-
-/* .page-footer-text {
-  color: var(--footer-text-color);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 264px;
-  margin-top: 16px;
-}
-
-.footer-title {
-  color: var(--hero-title-color);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-}
-
-.social-list-footer {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.social-list-item-footer {
-  flex-basis: calc(100% / 4 - 16px);
-}
-
-.social-list-item-footer > .social-list-link-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-item-footer > .social-list-link-footer:hover,
-.social-list-item-footer > .social-list-link-footer:focus {
-  background-color: #31d0aa;
-}
-
-.social-list-item-footer > .social-list-link-footer:hover .social-list-icon,
-.social-list-item-footer > .social-list-link-footer:focus .social-list-icon {
-  fill: #f4f4fd;
-}
-
-.subscribe-footer-form {
-  display: flex;
-  gap: 24px;
-}  */
 /* =========================footer subscribe */
 
 .subscribe-form-input {
@@ -1008,7 +937,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   padding: 8px 16px 8px 16px;
 }
@@ -1024,6 +953,7 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
+  opacity: 0.6;
 }
 
 .subscribe-button {
@@ -1052,75 +982,79 @@ body {
 .subscribe-icon {
   fill: #ffffff;
 }
+.footer-subscribe-second {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
-  .tablet-footer-one {
+  .container-footer {
+    width: 565px;
+    align-items: baseline;
+  }
+
+  .footer-part-one-two {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .footer-part-one {
+    align-items: start;
+    margin-bottom: 0;
+  }
+  .footer-part-two {
+    margin-bottom: 0;
+    align-items: start;
+  }
+
+  .subscribe-form-input {
+    width: 264px;
+  }
+
+  .subscribe-footer-form {
+    display: flex;
+    flex-direction: row;
     gap: 24px;
   }
-  .footer-part-one {
-    display: block;
+  .subscribe-button {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-/* 
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    width: 1128px;
+    flex-direction: row;
+    align-items: baseline;
+  }
 
-
-
-
-
-.subscribe-form-input {
-  width: 264px;
-  height: 40px;
-  background-color: var(--footer-backgroundcolor);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  padding: 8px 16px 8px 16px;
+  .footer-part-one-two {
+    display: flex;
+    gap: 120px;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+  .subscribe-form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+  }
+  .subscribe-form-input::placeholder {
+    opacity: 1;
+  }
+  .footer-subscribe-p {
+    display: none;
+  }
+  .footer-subscribe-second {
+    display: block;
+    text-align: start;
+  }
+  .subscribe-button {
+    margin-top: 40px;
+  }
 }
 
-.subscribe-form-input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 50px var(--footer-backgroundcolor); 
-  -webkit-text-fill-color: #ffffff; 
-}
-
-.subscribe-form-input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-
-.subscribe-button {
-  display: flex;
-  width: 165px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px;
-  gap: 16px;
-  background-color: #4d5ae5;
-  border-radius: 4px;
-  border: none;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-button:hover {
-  background-color: #404bbf;
-}
-
-.subscribe-icon {
-  fill: #ffffff;
-} */
 /* =================================================Фильтры для портфолио (КНОПКИ)*/
 .filter {
   background-color: var(--filter-background-color);
@@ -1183,8 +1117,8 @@ body {
 .modal {
   position: absolute;
   padding: 72px 24px 24px 24px;
-  width: 408px;
-  height: 584px;
+  width: 392px;
+  height: 586px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1346,16 +1280,6 @@ body {
   border-radius: 2px;
 }
 
-/* .modal-form-check-label::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #2e2f42;
-  border-radius: 2px;
-  cursor: pointer;
-} */
-
 .custom-checkbox {
   position: relative;
   display: block;
@@ -1389,16 +1313,6 @@ body {
   opacity: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .modal-form-check:checked + .modal-form-check-label::before {
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
-  background-image: url(/images/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 4px 3px 4px 3px;
-  outline: none;
-} */
 
 .modal-form-button {
   display: flex;
@@ -1436,6 +1350,18 @@ body {
 .modal-form-input-wrapper {
   display: block;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 584px;
+  }
 }
 
 /* ========================/MODAL WINDOW/=============== */
