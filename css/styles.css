@@ -518,10 +518,26 @@ body {
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 36px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: none;
+    width: 496px;
+    font-size: 56px;
+    margin-bottom: 36px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
+}
+
 .order-button {
   display: block;
   margin-left: auto;
@@ -546,15 +562,6 @@ body {
 }
 .order-button:focus {
   background-color: var(--order-button-hover);
-}
-
-@media screen and (min-width: 768px) {
-  .hero-title {
-    max-width: none;
-    width: 496px;
-    font-size: 56px;
-    margin-bottom: 48px;
-  }
 }
 
 /* ==============================================Tittle for h2 =================================================*/
