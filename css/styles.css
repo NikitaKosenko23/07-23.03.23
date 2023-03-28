@@ -157,6 +157,13 @@ body {
 }
 
 /*================================= Mobile-menu */
+
+@media screen and (max-width: 400px) {
+  .mobile-menu-social {
+    gap: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .site-nav {
     display: none;
@@ -251,6 +258,7 @@ body {
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
+    overflow-wrap: break-word;
     color: #404bbf;
     margin-bottom: 40px;
   }
@@ -298,6 +306,12 @@ body {
   }
   .mobile-menu-items {
     margin-bottom: 284px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .mobile-menu-social {
+    gap: 35px;
   }
 }
 
