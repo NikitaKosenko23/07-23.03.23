@@ -663,21 +663,20 @@ body {
 .work-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 }
 .work-list-item {
   flex-basis: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
   background-blend-mode: soft-light, normal;
   background: linear-gradient(
-      0deg,
-      rgba(77, 90, 229, 0.1),
-      rgba(77, 90, 229, 0.1)
-    ),
-    url(2225.jpg);
+    0deg,
+    rgba(77, 90, 229, 0.1),
+    rgba(77, 90, 229, 0.1)
+  );
 }
-
-.work-list-item:not(:last-child) {
-  margin-right: 24px;
+.work-list-item:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* =================================================our team================================================= */
